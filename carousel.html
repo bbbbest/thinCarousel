@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carousel</title>
+    <style>
+        #ca1, #ca2 {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div id="ca1" class="con"></div>
+<div id="ca2" class="con"></div>
+<script src="js/carousel-min.js"></script>
+<script>
+    var ca1 = new Carousel('ca1');
+    ca1.images([
+        'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-599106.jpg',
+        'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-601528.jpg',
+        'https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-599429.jpg'])
+        .width(800).height(600).speed(0.5).duration(3)
+        .render();
+
+    var ca2 = new Carousel('ca2');
+    ca2.images([
+        'img/1.jpg',
+        'img/2.jpg',
+        'img/3.jpg',
+        'img/4.jpg',
+        'img/5.jpg',
+        'img/6.jpg'])
+        .width(500).height(400).speed(0.5).duration(3)
+        .render();
+</script>
+</body>
+</html>
